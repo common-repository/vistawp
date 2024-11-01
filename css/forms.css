@@ -1,0 +1,40 @@
+.vista-form-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  padding: 10px;
+}
+
+.vista-form-row {
+  grid-column: span 2;
+}
+
+.vista-form-row-button-sm {
+  grid-column: 1;
+}
+
+.vista-form-row-button-sm > .vista-form-item > button[type=submit] {
+  width: 100%;
+}
+
+.vista-form-item {
+  padding: 20px;
+}
+
+.vista-label > label,
+.vista-input > label {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: top;
+  margin: 0 0 10px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.vista-form-item .vista-field-checkbox .vista-input {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 0fr));
+  grid-auto-columns: auto;
+  grid-auto-rows: 1.5rem;
+}

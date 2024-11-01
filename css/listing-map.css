@@ -1,0 +1,16 @@
+#vsta-listing-map {
+  z-index: 0;
+}
+
+#vsta-listing-map > .leaflet-control-container {
+  height: 75vh;
+  width: 100%;
+}
+
+div.leaflet-top.leaflet-left {
+  z-index: 0;
+}
+
+div#vsta-listing-map-info {
+  display: none;
+}

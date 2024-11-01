@@ -1,0 +1,121 @@
+.vsta-btn-danger {
+  background-color: #BD272D !important;
+  color: white !important;
+  padding: 12px;
+  border-radius:5px;
+  border:none;
+  cursor: pointer;
+}
+
+.vsta-btn-go {
+  background-color: #008E45 !important;
+  color: white !important;
+  padding: 12px;
+  border-radius:5px;
+  border:none;
+  cursor:pointer;
+ }
+
+.vsta-license-link {
+  float:right; 
+  padding-top:50px;
+  padding-right:25px;
+}
+
+.vsta-active{
+  color: #008E45;
+  font: 30px 'Noto Sans', sans-serif;
+  font-weight: 300;
+}
+
+.vsta-disabled {
+  color: #BD272D;
+  font: 30px 'Noto Sans', sans-serif;
+  font-weight: 300;
+}
+
+.vsta-license-h2{
+  font: 27px 'Noto Sans', sans-serif;
+  color: #666666;
+}
+
+.vsta-license-text,
+.vsta-license-label {
+  font: 16px 'Noto Sans', sans-serif;
+  font-weight: 300;
+  line-height: 22px;
+  color: #808080;
+}
+
+.vsta-settings-h1{
+  font: 35px 'Noto Sans', sans-serif;
+  font-weight: 500;
+  color: #ff785a ;
+}
+
+.vsta-settings-h2{
+  font: 27px 'Noto Sans', sans-serif;
+  color: #666666;
+}
+
+.vsta-settings-text{
+  font: 16px 'Noto Sans', sans-serif;
+  font-weight: 300;
+  line-height: 22px;
+  color: #808080;
+ }
+
+.vsta-settings-steps{
+  font: 16px 'Noto Sans', sans-serif;
+  color: #808080;
+  text-decoration: underline;
+ }
+
+ .vsta-settings-container {
+  padding:60px;
+}
+
+.vsta-settings-header {
+  background-color: white;
+  width:100%; 
+  height:125px;
+}
+
+.vsta-gen-btn {
+  font: 14px 'Noto Sans', sans-serif !important;
+  padding: 10px !important;
+
+}
+
+.vsta-forms-display{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 35px 35px 20px;
+  width: 70%;
+}
+
+#vistawp-banner{
+  display: grid;
+  grid-template-columns: 50px 180px auto;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.vsta-text-error {
+  color: #d63638;
+  font-weight: bold;
+}
+
+.vsta-text-success {
+  color: #00a32a;
+  font-weight: bold;
+}
+
+.vsta-settings-info {
+  background: #fff;
+  margin-top: 20px;
+  padding: 5px 20px 20px 25px;
+  width: 80%;
+  border-radius: 3px;
+  box-shadow: #0000001a 0px 0px 12px 0px;
+}

@@ -1,0 +1,5 @@
+#vistawp-welcome{
+  display: grid;
+  grid-template-columns: 100px auto;
+  border-left-color: #cc4d9a ;
+}

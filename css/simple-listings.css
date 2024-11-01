@@ -1,0 +1,297 @@
+.vista-sl-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  padding: 5px;
+  grid-gap: 2rem 1rem;
+  max-width: 83rem; /* 4 columns(max) * 17rem */
+  margin: 0 auto; /* Align the container to the center if its width is less than 68rem */
+}
+
+.vista-sl-light-card,
+.vista-sl-dark-card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 20vh repeat(3, 80px) 5vh 4.3vh;
+}
+
+.vista-sl-container .vista-sl-card div h2,
+.vista-sl-container .vista-sl-card div p,
+.vista-sl-container .vista-sl-card div a {
+  font-family: "Open Sans", Sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+.vista-sl-container .vista-sl-card div p {
+  margin-block-start: 0;
+  margin-block-end: 0.9rem;
+}
+
+.vista-sl-container .vista-sl-card .vista-sl-photo > a.vista-sl-photo-link {
+  display: inline;
+}
+
+.vista-sl-photo > a.vista-sl-photo-link > img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.vista-sl-light-address,
+.vista-sl-dark-address {
+  padding: 5px;
+}
+
+.vista-sl-container .vista-sl-light-card .vista-sl-light-address a.vista-sl-address-link,
+.vista-sl-container .vista-sl-dark-card .vista-sl-dark-address a.vista-sl-address-link {
+  text-decoration: none;
+}
+
+.vista-sl-container .vista-sl-light-card .vista-sl-light-address a.vista-sl-address-link > h2,
+.vista-sl-container .vista-sl-dark-card .vista-sl-dark-address a.vista-sl-address-link > h2 {
+  font-size: 1.4rem;
+  line-height: 1;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+
+.vista-sl-light-price,
+.vista-sl-dark-price {
+  display: grid;
+  /* align-items: center; */
+  align-items: end;
+}
+
+.vista-sl-container .vista-sl-light-card .vista-sl-light-price p,
+.vista-sl-container .vista-sl-dark-card .vista-sl-dark-price p {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.vista-sl-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  align-items: center;
+ }
+ 
+ .vista-sl-container .vista-sl-card .vista-sl-info div > p {
+  font-size: 1.3rem;
+  line-height: 0.7;
+ }
+
+.vista-sl-agent-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  font-size: 1rem;
+}
+
+.vista-sl-container .vista-sl-card .vista-sl-agent-info div > p {
+  font-size: 1rem;
+  line-height: 0.7;
+}
+
+.vista-sl-container .vista-sl-card .vista-sl-light-btn > a.vista-sl-light-link,
+.vista-sl-container .vista-sl-card .vista-sl-dark-btn > a.vista-sl-dark-link {
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 2em;
+  text-decoration: none;
+  border-radius: 2px 2px 2px 2px;
+}
+
+
+/* Set styles for the simple listing light template */
+
+.vista-sl-light-card {
+  background-color: #ffffff3d;
+}
+
+.vista-sl-container .vista-sl-card .vista-sl-light-address a.vista-sl-address-link > h2,
+.vista-sl-container .vista-sl-card .vista-sl-light-price > p {
+  color: #000000;
+}
+
+.vista-sl-container .vista-sl-card .vista-sl-info .vista-sl-light-beds > p,
+.vista-sl-container .vista-sl-card .vista-sl-info .vista-sl-light-baths > p,
+.vista-sl-container .vista-sl-card .vista-sl-info .vista-sl-light-sqft > p,
+.vista-sl-container .vista-sl-card .vista-sl-agent-info .vista-sl-light-listingid > p,
+.vista-sl-container .vista-sl-card .vista-sl-agent-info .vista-sl-light-status > p {
+  color: #666666;
+}
+
+.vista-sl-container .vista-sl-card .vista-sl-light-btn > a.vista-sl-light-link {
+  background-color: #0000001C;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.vista-sl-container .vista-sl-card .vista-sl-light-btn > a.vista-sl-light-link:hover {
+  background-color: #00000050;
+  color: #fff;
+}
+
+
+/* Set styles for the simple listing dark template */
+
+.vista-sl-dark-card {
+  background-color: #00000030;
+}
+
+.vista-sl-container .vista-sl-card .vista-sl-dark-address a.vista-sl-address-link > h2,
+.vista-sl-container .vista-sl-card .vista-sl-dark-price > p {
+  color: #ffffff;
+}
+
+.vista-sl-container .vista-sl-card .vista-sl-info .vista-sl-dark-beds > p,
+.vista-sl-container .vista-sl-card .vista-sl-info .vista-sl-dark-baths > p,
+.vista-sl-container .vista-sl-card .vista-sl-info .vista-sl-dark-sqft > p,
+.vista-sl-container .vista-sl-card .vista-sl-agent-info .vista-sl-dark-listingid > p,
+.vista-sl-container .vista-sl-card .vista-sl-agent-info .vista-sl-dark-status > p {
+  color: #B3B3B3;
+}
+
+.vista-sl-container .vista-sl-card .vista-sl-dark-btn > a.vista-sl-dark-link {
+  background-color: #ffffff50;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.vista-sl-container .vista-sl-card .vista-sl-dark-btn > a.vista-sl-dark-link:hover {
+  background-color: #ffffff8a;
+  color: #ffffff;
+}
+
+/* pagination */
+
+.vista-sl-pagination {
+  display: grid;
+  grid-template-columns: 1fr 0fr 0fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: dense;
+  padding: 10px 5px 10px 5px;
+  grid-gap: 2rem 1rem;
+  max-width: 83rem;
+  margin: 0 auto;
+  word-break: normal;
+}
+
+.vista-sl-light-prev,
+.vista-sl-dark-prev {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.vista-sl-light-next,
+.vista-sl-dark-next {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.vista-sl-light-prev > button.listings-backward,
+.vista-sl-light-next > button.listings-forward,
+.vista-sl-dark-prev > button.listings-backward,
+.vista-sl-dark-next > button.listings-forward {
+  font-family: "Open Sans", Sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  transition: all .3s;
+  margin: 0;
+}
+
+.vista-sl-light-prev > button.listings-backward,
+.vista-sl-light-next > button.listings-forward {
+  background: #ffffff3d;
+  border: solid 1px #cecece;
+  color: #6a6c80;
+}
+
+.vista-sl-light-prev > button.listings-backward:hover,
+.vista-sl-light-prev > button.listings-backward:focus,
+.vista-sl-light-prev > button.listings-backward:active,
+.vista-sl-light-prev > button.listings-backward:visited,
+.vista-sl-light-next > button.listings-forward:hover,
+.vista-sl-light-next > button.listings-forward:focus,
+.vista-sl-light-next > button.listings-forward:active,
+.vista-sl-light-next > button.listings-forward:visited {
+  background: #cecece;
+  color: #fff;
+  outline: 1px auto #cecece;
+}
+
+.vista-sl-dark-prev > button.listings-backward,
+.vista-sl-dark-next > button.listings-forward {
+  background: #ffffff50;
+  border: solid 1px #ffffff70;
+  color: #fff;
+}
+
+.vista-sl-dark-prev > button.listings-backward:hover,
+.vista-sl-dark-prev > button.listings-backward:focus,
+.vista-sl-dark-prev > button.listings-backward:active,
+.vista-sl-dark-prev > button.listings-backward:visited,
+.vista-sl-dark-next > button.listings-forward:hover,
+.vista-sl-dark-next > button.listings-forward:focus,
+.vista-sl-dark-next > button.listings-forward:active,
+.vista-sl-dark-next > button.listings-forward:visited {
+  background: #ffffff8a;
+  color: #fff;
+  outline: 1px auto #ffffff00;
+}
+
+.vista-sl-light-prev > button[disabled].listings-backward,
+.vista-sl-light-next > button[disabled].listings-forward {
+  background-color: #c1c1c1;
+  color: #6a6c80;
+  cursor: not-allowed;
+  outline: 0px;
+}
+
+.vista-sl-dark-prev > button[disabled].listings-backward,
+.vista-sl-dark-next > button[disabled].listings-forward {
+  background-color: #ffffff00;
+  color: #ffffff4f;
+  cursor: not-allowed;
+  outline: 0px;
+}
+
+/* results label */
+.vista-sl-results {
+  display: flex;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.vista-sl-results > label.vista-sl-light-results-label,
+.vista-sl-results > label.vista-sl-dark-results-label {
+  line-height: 1;
+  vertical-align: middle;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.vista-sl-results > label.vista-sl-light-results-label {
+  color: #6a6c80;
+}
+
+.vista-sl-results > label.vista-sl-dark-results-label {
+  color: #ffffff8f;
+}
